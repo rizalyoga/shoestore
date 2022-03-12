@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>SHOESTORE</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./icon.png" type="image/x-icon" />
         {/* /* ------------------------------ nprogress CDN -----------------------------  */}
         {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" /> */}
       </Head>
