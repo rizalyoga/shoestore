@@ -13,7 +13,7 @@ const Card = () => {
   }, [likes]);
 
   return (
-    <div className="cards w-full flex flex-wrap flex-row mt-10 flex-1 md:justify-evenly md:container md:mx-auto ">
+    <div className="cards w-full flex flex-wrap flex-row mt-10 flex-1 md:justify-between md:container md:mx-auto ">
       {content.map((product, ind) => (
         <div className={styles["container-card"]} key={ind}>
           <div className={styles["image-container"]}>

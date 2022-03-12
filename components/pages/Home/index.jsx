@@ -5,7 +5,7 @@ import Card from "../../cards/card";
 const Home = () => {
   return (
     <Layout>
-      <div className="banner  mt-24 w-full flex flex-col lg:flex-row justify-center">
+      <div className="banner mt-24 lg:mx-2 flex flex-col lg:flex-row justify-center">
         <div className="banner-one mx-5 lg:mx-2 my-3 lg:my-0 lg:w-6/12">
           <img src="./Group-45.png" alt="banner-1" />
         </div>
