@@ -5,7 +5,7 @@ import { BsTwitter, BsYoutube, BsFillTelephoneFill, BsFacebook, BsTelephone } fr
 const footer = () => {
   return (
     <div className="w-full mt-10 bg-sky-100 bottom-0 left-0 right-0">
-      <div className="container mx-auto px-5 lg:px-5 flex flex-col lg:flex-row flex-wrap justify-between " style={{ maxWidth: "1440px" }}>
+      <div className="container mx-auto px-5 lg:px-5 flex flex-col lg:flex-row flex-wrap justify-between " style={{ maxWidth: "1200px" }}>
         {/* /* --------------------------- log & desc company ---------------------------  */}
         <div className="description-comp flex flex-col lg:w-4/12 py-3 lg:py-5">
           <div className="lg:w-10/12">

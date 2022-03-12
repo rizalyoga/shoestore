@@ -21,8 +21,8 @@ const Layout = ({ children }) => {
         <div className="w-full">{children}</div>
       </main>
       {router.asPath === "/" ? (
-        <div className="w-full banner-bottom my-5 mx-auto flex justify-center" style={{ maxWidth: "1440px" }}>
-          <img src="./banner-bottom.png" alt="banner-bottom" />
+        <div className="lg:w-full mx-3 banner-bottom my-5 mx-auto flex justify-center" style={{ maxWidth: "1440px" }}>
+          <img className="lg:px-2" src="./banner-bottom.png" alt="banner-bottom" />
         </div>
       ) : (
         <></>
