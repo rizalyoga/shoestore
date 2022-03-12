@@ -16,8 +16,8 @@ const ProductList = () => {
 
   return (
     <Layout>
-      <div className="mx-auto mt-20 filter-row mx-2">
-        <div className="search-col w-full lg:w-5/12">
+      <div className="filter-row mt-20 lg:mx-2">
+        <div className="search-col lg:mx-1 lg:w-5/12">
           <Search />
         </div>
         <div className="filter-col w-full">

@@ -8,7 +8,7 @@ import FilterCol from "../../filter-col/index.jsx";
 const Home = () => {
   return (
     <Layout>
-      <div className="mx-auto mt-20 filter-row lg:mx-2 flex items-center flex-col justify-between lg:flex-row">
+      <div className="mx-auto mt-20 filter-row lg:mx-2 flex flex-col items-center justify-between lg:flex-row">
         <div className="filter-col w-full lg:w-9/12">
           <FilterCol />
         </div>
@@ -25,7 +25,7 @@ const Home = () => {
         </div>
       </div>
       <Card content={bestSeller} />
-      <div className="mid-banner mt-5 mx-3 lg:mx-2">
+      <div className="mid-banner mt-5 mx-3">
         <img src="./mid-banner.png" alt="midle-banner" className="rounded-lg" />
       </div>
       <Card content={trending} />

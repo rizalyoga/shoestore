@@ -6,7 +6,7 @@ const SearchCol = () => {
 
   return (
     <form className="flex items-center mx-5 lg:mx-0">
-      <input className="w-full rounded-lg h-10 p-5 bg-white" type="search" value={term} onChange={(e) => setTerm(e.target.value)} placeholder="Search your favorite shoes..." /> <BsSearch className="-ml-8" />
+      <input className="w-full rounded-lg h-10 p-5 bg-white" type="search" value={term} onChange={(e) => setTerm(e.target.value)} placeholder="Search your favorite shoes..." /> <BsSearch className="-ml-8 text-navy" />
     </form>
   );
 };

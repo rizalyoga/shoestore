@@ -11,7 +11,7 @@ const Card = ({ content }) => {
   };
 
   return (
-    <div className="cards w-full flex flex-wrap flex-row mt-5 flex-1 md:justify-between md:container md:mx-auto ">
+    <div className="cards w-full flex flex-wrap flex-row mt-5 flex-1 justify-between md:container md:mx-auto ">
       {content.map((product, ind) => (
         <div className={styles["container-card"]} key={ind}>
           <div className={styles["image-container"]}>

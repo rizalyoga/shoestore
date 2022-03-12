@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="z-50 fixed top-0 bg-white w-full rounded-b-2xl h-14">
-      <div className="px-4 mx-auto flex justify-between items-center h-full" style={{ maxWidth: "1440px" }}>
+      <div className="px-1 mx-auto flex justify-between items-center h-full" style={{ maxWidth: "1440px" }}>
         <div className="w-3/12 md:w-4/12 flex items-center text-navy font-bold">
           <RiShoppingBag3Line className="text-2xl md:text-xl " />
           {router.asPath === "/listproduct" ? (
