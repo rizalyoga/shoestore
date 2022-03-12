@@ -1,10 +1,12 @@
 import React from "react";
+import { useRouter } from "next/router";
 import Navbar from "../navbar/navbar";
 import Sidebar from "../sidebar/sidebar";
 import Footer from "../footer/footer";
 import Head from "next/head";
 
 const Layout = ({ children }) => {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -18,9 +20,14 @@ const Layout = ({ children }) => {
         <Sidebar />
         <div className="w-full">{children}</div>
       </main>
+      {router.asPath === "/" ? (
+        <div className="w-full banner-bottom my-5 mx-auto flex justify-center" style={{ maxWidth: "1440px" }}>
+          <img src="./banner-bottom.png" alt="banner-bottom" />
+        </div>
+      ) : (
+        <></>
+      )}
       <Footer />
-
-      {/* <Footer /> */}
     </>
   );
 };

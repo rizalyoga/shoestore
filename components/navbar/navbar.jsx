@@ -32,7 +32,7 @@ const Navbar = () => {
           )}
         </div>
         <div className="w-4/12 text-center justify-center">
-          <p className="text-bold text-xl font-bold">SHOESTORE</p>
+          <p className="text-bold text-2xl font-bold">SHOESTORE</p>
         </div>
         <div className="w-4/12 flex justify-end items-center">
           <TiThMenu className="md:hidden text-lg text-end" />
