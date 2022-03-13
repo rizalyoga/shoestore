@@ -1,5 +1,8 @@
 export const brands = [
   {
+    title: "ALL BRANDS",
+  },
+  {
     title: "Avali",
   },
   {

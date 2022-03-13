@@ -5,7 +5,8 @@ import ActiveButton from "../../buttons/active-buttons";
 import { AiOutlineDown } from "react-icons/ai";
 import { content } from "../../cards/temp";
 import Search from "../../search-col/index";
-import FilterCol from "../../filter-col/index";
+import FilterCol from "../../filter-brands-col/index";
+import FilterProductCol from "../../filter-list-product-col/index";
 
 const ProductList = () => {
   const title = (
@@ -23,6 +24,9 @@ const ProductList = () => {
         <div className="filter-col w-full">
           <FilterCol />
         </div>
+      </div>
+      <div>
+        <FilterProductCol />
       </div>
       <Card content={content} />
       <div className=" flex items-center justify-center mt-8">

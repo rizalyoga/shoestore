@@ -3,12 +3,12 @@ import Layout from "../../layout/layout";
 import Card from "../../cards/card";
 import Search from "../../search-col/index.jsx";
 import { bestSeller, trending } from "../../cards/temp";
-import FilterCol from "../../filter-col/index.jsx";
+import FilterCol from "../../filter-brands-col/index";
 
 const Home = () => {
   return (
     <Layout>
-      <div className="mx-auto mt-20 filter-row lg:mx-2 flex flex-col items-center justify-between lg:flex-row">
+      <div className="mx-auto mt-16 filter-row lg:mx-2 flex flex-col items-center justify-between lg:flex-row">
         <div className="filter-col w-full lg:w-9/12">
           <FilterCol />
         </div>
