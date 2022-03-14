@@ -18,7 +18,12 @@ const FilterRow = () => {
         </div>
 
         <div className="Size-col lg:w-3/12">
-          <h1 className="text-xl ml-1 mt-2 font-bold text-navy">Color</h1>
+          <h1 className="text-xl ml-1 mt-2 font-bold text-navy">Size</h1>
+          <SizeCol />
+        </div>
+
+        <div className="Size-col lg:w-3/12">
+          <h1 className="text-xl ml-1 mt-2 font-bold text-navy">Price</h1>
           <SizeCol />
         </div>
       </div>
