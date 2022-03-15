@@ -1,19 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import styles from "./card.module.css";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import { content } from "./temp";
+// import { content } from "./temp";
 
 const Card = ({ content }) => {
+  const router = useRouter();
   const [like, setLike] = useState(false);
 
   const likes = () => {
     !like ? setLike(true) : setLike(false);
   };
 
+  const toDetails = (id, nameProduct) => {
+    router.push(`/detail/${id}?name=${nameProduct}`);
+  };
+
   return (
-    <div className="cards w-full flex flex-wrap flex-row mt-5 flex-1 justify-between md:container md:mx-auto ">
+    <div className="cards w-full flex flex-wrap flex-row mt-5 flex-1 justify-between md:container md:mx-auto">
       {content.map((product, ind) => (
-        <div className={styles["container-card"]} key={ind}>
+        <div className={styles["container-card"]} key={ind} onClick={() => toDetails(product.id, product.name)}>
           <div className={styles["image-container"]}>
             <div onClick={likes}>
               {like ? (
