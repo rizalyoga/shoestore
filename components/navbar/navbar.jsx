@@ -18,6 +18,16 @@ const Navbar = () => {
     router.push("/");
   };
 
+  const toRegister = (e) => {
+    e.preventDefault();
+    router.push("/register");
+  };
+
+  const toLogin = (e) => {
+    e.preventDefault();
+    router.push("/login");
+  };
+
   return (
     <nav className="z-50 fixed top-0 bg-white w-full rounded-b-2xl h-14">
       <div className="px-1 mx-auto flex justify-between items-center h-full" style={{ maxWidth: "1440px" }}>
@@ -37,10 +47,10 @@ const Navbar = () => {
         <div className="w-3/12 md:w-4/12 flex justify-end items-center">
           <TiThMenu className="md:hidden text-2xl text-end" />
 
-          <div onClick={toHome} className="hidden md:block">
+          <div onClick={toLogin} className="hidden md:block">
             <SecondaryNavBtn titleButton={"Login"} />
           </div>
-          <div onClick={toListProduct} className="hidden md:block">
+          <div onClick={toRegister} className="hidden md:block">
             <ActiveButton titleButton={"Register"} />
           </div>
         </div>

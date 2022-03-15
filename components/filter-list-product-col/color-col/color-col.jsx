@@ -6,7 +6,7 @@ const ColorCol = () => {
   return (
     <>
       {color.map((color, ind) => (
-        <ButtonSortColor titleButton={color} color={color == "Black" ? `focus:bg-gray-900` : `focus:bg-${color.toLocaleLowerCase()}-500`} key={ind} />
+        <ButtonSortColor titleButton={color} color={color.toLocaleLowerCase()} key={ind} />
       ))}
     </>
   );
